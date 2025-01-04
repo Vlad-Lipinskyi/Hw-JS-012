@@ -142,14 +142,14 @@
       this[globalName] = mainExports;
     }
   }
-})({"9mu7C":[function(require,module,exports,__globalThis) {
+})({"7Uaak":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
 var HMR_USE_SSE = false;
-module.bundle.HMR_BUNDLE_ID = "890e741a975ef6c8";
+module.bundle.HMR_BUNDLE_ID = "7055c94b59712999";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, HMR_USE_SSE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -595,48 +595,8 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     }
 }
 
-},{}],"8lqZg":[function(require,module,exports,__globalThis) {
-class CountdownTimer {
-    constructor(options){
-        this.selector = options.selector;
-        this.targetDate = options.targetDate;
-        this.timerElement = document.querySelector(this.selector);
-        this.fields = {
-            days: this.timerElement.querySelector('[data-value="days"]'),
-            hours: this.timerElement.querySelector('[data-value="hours"]'),
-            mins: this.timerElement.querySelector('[data-value="mins"]'),
-            secs: this.timerElement.querySelector('[data-value="secs"]')
-        };
-        this.start();
-    }
-    start() {
-        this.interval = setInterval(()=>{
-            const currentTime = new Date();
-            const time = this.targetDate - currentTime;
-            if (time <= 0) {
-                clearInterval(this.interval);
-                this.updateTimer(0, 0, 0, 0);
-            } else {
-                const days = Math.floor(time / 86400000);
-                const hours = Math.floor(time % 86400000 / 3600000);
-                const mins = Math.floor(time % 3600000 / 60000);
-                const secs = Math.floor(time % 60000 / 1000);
-                this.updateTimer(days, hours, mins, secs);
-            }
-        }, 1000);
-    }
-    updateTimer(days, hours, mins, secs) {
-        this.fields.days.textContent = days;
-        this.fields.hours.textContent = String(hours).padStart(2, '0');
-        this.fields.mins.textContent = String(mins).padStart(2, '0');
-        this.fields.secs.textContent = String(secs).padStart(2, '0');
-    }
-}
-new CountdownTimer({
-    selector: '#timer-1',
-    targetDate: new Date('Jul 17, 2025 00:00:00')
-});
+},{}],"4M6V8":[function(require,module,exports,__globalThis) {
 
-},{}]},["9mu7C","8lqZg"], "8lqZg", "parcelRequire94c2")
+},{}]},["7Uaak","4M6V8"], "4M6V8", "parcelRequire94c2")
 
-//# sourceMappingURL=index.975ef6c8.js.map
+//# sourceMappingURL=Hw-JS-012.59712999.js.map
