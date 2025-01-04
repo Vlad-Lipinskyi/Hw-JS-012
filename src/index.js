@@ -4,10 +4,10 @@ class CountdownTimer {
     this.targetDate = options.targetDate;
     this.timerElement = document.querySelector(this.selector);
     this.fields = {
-      days: this.timerElement.querySelector('[data-value="days"]'),
-      hours: this.timerElement.querySelector('[data-value="hours"]'),
-      mins: this.timerElement.querySelector('[data-value="mins"]'),
-      secs: this.timerElement.querySelector('[data-value="secs"]')
+      days: this.timerElement.querySelector("[data-value="days"]"),
+      hours: this.timerElement.querySelector("[data-value="hours"]"),
+      mins: this.timerElement.querySelector("[data-value="mins"]"),
+      secs: this.timerElement.querySelector("[data-value="secs"]")
     };
     this.start();
   }
@@ -33,13 +33,13 @@ class CountdownTimer {
 
   updateTimer(days, hours, mins, secs) {
     this.fields.days.textContent = days;
-    this.fields.hours.textContent = String(hours).padStart(2, '0');
-    this.fields.mins.textContent = String(mins).padStart(2, '0');
-    this.fields.secs.textContent = String(secs).padStart(2, '0');
+    this.fields.hours.textContent = String(hours).padStart(2, "0");
+    this.fields.mins.textContent = String(mins).padStart(2, "0");
+    this.fields.secs.textContent = String(secs).padStart(2, "0");
   }
 }
 
 new CountdownTimer({
-  selector: '#timer-1',
-  targetDate: new Date('Jul 17, 2025 00:00:00')
+  selector: "#timer-1",
+  targetDate: new Date("Jul 17, 2025 00:00:00")
 });
