@@ -4,10 +4,10 @@ class CountdownTimer {
     this.targetDate = options.targetDate;
     this.timerElement = document.querySelector(this.selector);
     this.fields = {
-      days: this.timerElement.querySelector("[data-value="days"]"),
-      hours: this.timerElement.querySelector("[data-value="hours"]"),
-      mins: this.timerElement.querySelector("[data-value="mins"]"),
-      secs: this.timerElement.querySelector("[data-value="secs"]")
+      days: this.timerElement.querySelector('[data-value="days"]'),
+      hours: this.timerElement.querySelector('[data-value="hours"]'),
+      mins: this.timerElement.querySelector('[data-value="mins"]'),
+      secs: this.timerElement.querySelector('[data-value="secs"]')
     };
     this.start();
   }
